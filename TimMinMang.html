@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+  function minArray(checkArray){
+      parseInt(checkArray);
+      let min = checkArray[0];
+      for (i=0; i<checkArray.length; i++){
+          if (checkArray[i] < min) {
+              min = checkArray[i];
+          }
+      }
+      document.write('Gia tri min cua ' +checkArray + " = " +min + "<br/>");
+  }
+  let arr1 = [3, 5, 1, 8,-3, 7, 8];
+  minArray(arr1);
+  let arr2 = [7, 12, 6, 9,20, 56, 89];
+  minArray(arr2);
+  let arr3 = [];
+  minArray(arr3);
+  let arr4 = [0, 0, 0, 0, 0, 0];
+  minArray(arr4);
+</script>
+</body>
+</html>
